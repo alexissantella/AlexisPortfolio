@@ -22,7 +22,7 @@ header {
 }
 
 /* -- title: Name -- */
-.logo h1 {
+.logo {
   font-family: 'Poppins', sans-serif;
   font-size: 90px;
   font-weight: 100;
@@ -36,7 +36,7 @@ hr {
   background-color: #341f37ff;
 }
 
-main h2 h3 {
+main h1 h2 h3 {
   font-family: 'Poppins', sans-serif;
   color: #341f37ff;
   margin: 0;
