@@ -1,9 +1,8 @@
-/* CSS HEX color pallete used
-text color === dark-purple: #341f37ff;
-pink accent color === cinnamon-satin: #bb6675ff;
-blue accent === iris: #4e50d0ff;
-header background color === medium-sea-green: #4abe7bff;
-Light background color === gainsboro: #dce5e4ff;
+/* CSS HEX color pallete:
+--space-cadet: #2c2549ff;
+--liberty: #6258a9ff;
+--cinnamon-satin: #b86173ff;
+--myrtle-green: #386865ff;
 */
 
 
@@ -11,73 +10,106 @@ Light background color === gainsboro: #dce5e4ff;
 
 body {
   margin: 0;
-  background-color: #dce5e4ff;
-  font-family: 'Work Sans', sans-serif;
-  color: #341f37ff;
+  background-color: #FFFFFF;
+  font-family: 'Open Sans Condensed', sans-serif; 
+  color: #000;
 }
 
 header {
   height: 140px;
-  background-color:#4abe7bff; 
+  padding: 0 0 0;
 }
 
 /* -- title: Name -- */
 .logo {
-  font-family: 'Poppins', sans-serif;
-  font-size: 90px;
+  font-family: 'Sacramento', cursive;
+  font-size: 8vw;
   font-weight: 100;
-  color: #341f37ff;
-  text-align: right;
+  color: #000;
+  text-align: center;
   margin: 0;
-  padding: 20px 0 0 0;
+  padding: 0px 0 0 0;
 }
 
 hr {
-  background-color: #341f37ff;
+  background-color: #000;
 }
 
-main h1 h2 h3 {
-  font-family: 'Poppins', sans-serif;
-  color: #341f37ff;
+main h1 h2 {
+  color: #000;
   margin: 0;
   font-size: 18px;
   font-weight: 400;
-  text-align: left;
 }
 
-main p ul ol {
-  font-family: 'Work Sans', sans-serif;
-  color: #341f37ff;
+main ul {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #000;
   margin: 0;
   font-size: 16px;
   font-weight: 400;
-  text-align: center ;
 }
 
 
 /* -- Link style -- */
 a {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 16px;
 }
 
-a:link    { color: #341f37ff;  }
-a:visited { color: #bb6675ff;   }
-a:hover   { color: #4abe7bff; }
-a:active  { color: #4e50d0ff;  }
+a:link    { color: #000;}
+a:visited { color: #b86173ff;}
+a:hover   { color: #386865ff;}
+a:active  { color: #6258a9ff;}
 
 footer {
-  background-color: #4e50d0ff;
   text-align: right;
 }
 
 section {
-  padding: 0 25%;
-  margin: 80px 0;
+  padding: 0 10%;
+  margin: 10px 0;
 }
 
 img {
-  align: center;
-  width: 500px;
-  border-radius: 5%;
+  width: 100%;
+}
+
+
+/* --  Groups & Items  (Mobile First) -- */
+.wrapper {
+  width: 100%;
+}
+
+.group-pictures {
+  display: flex;
+  flex-direction: row;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 5px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 5px;
+}
+
+/* Groups & Items  (Desktop) */
+
+@media all and (min-width: 800px) {
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: row;
+  }
 }
