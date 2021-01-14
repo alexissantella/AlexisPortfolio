@@ -6,6 +6,41 @@
 */
 
 
+
+/* -- title: Name -- */
+.logo {
+  font-family: 'Sacramento', cursive;
+  font-size: 10vw;
+  font-weight: 100;
+  color: #000;
+  text-align: center;
+  margin: 0;
+  padding-top: 10px;
+}
+
+/* -- header navigation -- */
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+}
+
+header nav ul li:last-child a {
+  margin-right: 0;
+}
+
 /* -- General Style -- */
 
 body {
@@ -17,28 +52,18 @@ body {
 
 header {
   height: 140px;
-  padding: 0 0 0;
-}
-
-/* -- title: Name -- */
-.logo {
-  font-family: 'Sacramento', cursive;
-  font-size: 8vw;
-  font-weight: 100;
-  color: #000;
-  text-align: center;
-  margin: 0;
-  padding: 0px 0 0 0;
+  margin-bottom: 20px;
 }
 
 hr {
-  background-color: #000;
+  width:80%;
+  margin:0 auto;
 }
 
 main h1 h2 {
   color: #000;
   margin: 0;
-  font-size: 18px;
+  font-size: 30px;
   font-weight: 400;
 }
 
@@ -48,8 +73,9 @@ main ul {
   margin: 0;
   font-size: 16px;
   font-weight: 400;
+  padding-left: 0;
+  list-style: none;
 }
-
 
 /* -- Link style -- */
 a {
@@ -68,6 +94,7 @@ footer {
 
 section {
   padding: 0 10%;
+  padding-top: 30px;
   margin: 10px 0;
 }
 
@@ -81,7 +108,7 @@ img {
   width: 100%;
 }
 
-.group-pictures {
+.group-row {
   display: flex;
   flex-direction: row;
 }
@@ -104,6 +131,7 @@ img {
 /* Groups & Items  (Desktop) */
 
 @media all and (min-width: 800px) {
+
   .wrapper {
     width: 80%;
     margin: auto;
@@ -112,4 +140,43 @@ img {
   .group {
     flex-direction: row;
   }
+
+  .group-column {
+      flex-direction: column;
+    }
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  header h1 {
+    margin: 14px 0;
+    padding-top: 0;
+  }
+  
+  header nav {
+    margin-top: 8px;
+  }
+
+}
+
+/* Contact Form Design */
+form {
+  padding-right: 8px;
+  /* Fixed small sizing issue on the right */
+}
+
+form label {
+  display: block;
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
 }

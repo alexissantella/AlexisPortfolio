@@ -15,14 +15,24 @@
 		<div class="logo">
 			Alexis Santella
 		</div>
+		<div class="nav">
+			<nav>
+				<ul id="menu">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 
 	<main>
-		<!-- Pictures --> 
-      <section>
-        <div class="group-pictures">
-          <div class="item-double">
-            <img src="palette1.png" alt="Color">
+	<!-- Pictures -->
+		<section>
+			<div class="group-row">
+				<div class="item-double">
+					<img src="palette1.png" alt="Color">
           </div>
           <div class="item-double">
             <img src="palette2.png" alt="Color">
@@ -33,21 +43,17 @@
           <div class="item-double">
             <img src="palette3.png" alt="Color">
           </div>
-          <div class="item-double">
-            <img src="palette4.png" alt="Color">
-          </div>
         </div>
       </section>
 
-	<hr width="80%">
+	<hr>
 
 		<!-- Introduction -->
-      <section>
+      <section id="home">
 			  <div class="group">
           <div class="item">
             <h1>Hi! I'm Alexis</h1>
-            <p>I am a software developer in Boston, Massachusetts.</p>
-            <p>I am a 25 year old engineer in Boston. I studied at Wentworth Institute of Technology in Boston, and graduated with a Bachelor of Science in Mechanical Engineering and a Minor in Physics.</p>
+            <p>I am a software developer in Boston, Massachusetts. I studied at Wentworth Institute of Technology in Boston, and graduated with a Bachelor of Science in Mechanical Engineering and a Minor in Physics.</p>
           </div>
         </div>
       </section>
@@ -55,7 +61,7 @@
     
 
 		<!-- About Me -->
-		<section>
+		<section id="about">
       <div class="group">
         <div class="item-double">
           <h2>About me</h2>
@@ -73,9 +79,9 @@
 		</section>
 
     		<!-- Project Section -->
-		<section>
-     <h2>Projects</h2>
-      <div class="group-pictures">
+		<section id="portfolio">
+     <h2>Portfolio</h2>
+      <div class="group-row">
         <div class="item">
           <p><u>Project Title 1</u></p>
           <img src="palette1.png" alt="Color">
@@ -100,15 +106,37 @@
 		</section>
 
       <!-- Contact -->
-    <section>
+    <section id="contact">
+      <h2>Connect with me</h2>
+      <div class="group-column">
         <div class="item">
-          <h2>Contact me</h2>
           <ul>
              <li><a href="https://www.linkedin.com/in/alexis-santella/" target="_blank">Linkedin Profile</a></li>
-              <li><a href="https://github.com/alexissantella" target="_blank">GitHub Profile</a></li>
-              <li><a href="mailto:alexis.santella@gmail.com?subject=Hello%20Alexis">Email alexis.santella@gmail.com</a></li>
+             <li><a href="https://github.com/alexissantella" target="_blank">GitHub Profile</a></li>
+             <li><a href="mailto:alexis.santella@gmail.com?subject=Hello%20Alexis"> Alexis.Santella@gmail.com</a></li>
           </ul>
         </div>
+
+        <div class="item">
+          <p>Or use the form below to send me a message!</p>
+          <form action="https://formspree.io/f/mdopyjla" method="POST">
+            <label>
+              Your Name:
+              <input type="text" name="name">
+            </label> 
+            <label>
+              Your email: 
+              <input type="text" name="_replyto">
+            </label>
+            <label>
+              Your message to me:
+              <textarea name="message"></textarea>
+            </label>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+
     </section>
 	</main>
 
