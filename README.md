@@ -3,7 +3,7 @@
 ## Screenshots
 
 Homescreen:
-![Homescreen](Screenshots/Homescreen.png)
+![Homescreen](Homescreen.png)
 
 ## Features (Summary of what app does)
 * See projects and links to each project
